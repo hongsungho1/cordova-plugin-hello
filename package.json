@@ -21,5 +21,10 @@
     "cordova-android"
   ],
   "author": "shhong",
-  "license": "Apache-2"
+  "license": "Apache-2",
+  "bugs": {
+    "url": "https://github.com/hongsungho1/cordova-plugin-hello/issues"
+  },
+  "homepage": "https://github.com/hongsungho1/cordova-plugin-hello#readme"  
+  
 }
