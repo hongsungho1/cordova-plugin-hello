@@ -1,7 +1,7 @@
 /*global cordova, module*/
 
 module.exports = {
-    greet: function (name, successCallback, errorCallback, zzzCallback) {
-        cordova.exec(successCallback, errorCallback, zzzCallback, "Hello", "greet", [name]);
+    greet: function (name, successCallback, errorCallback, failureCallback) {
+        cordova.exec(successCallback, errorCallback, failureCallback, "Hello", "greet", [name]);
     }
 };
