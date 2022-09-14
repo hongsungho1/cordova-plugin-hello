@@ -1,13 +1,18 @@
 {
   "name": "cordova-plugin-hello",
   "version": "0.0.1",
-  "description": "",
+  "description": "A sample for a new cordova plugin",
   "cordova": {
     "id": "cordova-plugin-hello",
     "platforms": [
       "android"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hongsungho1/cordova-plugin-hello.git"
+  },  
+  
   "keywords": [
     "cordova",
     "plugin",
@@ -15,6 +20,6 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "",
+  "author": "shhong",
   "license": "Apache-2"
 }
