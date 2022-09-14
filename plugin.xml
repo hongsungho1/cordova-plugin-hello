@@ -1,26 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.example.plugin" version="0.0.1" 
-xmlns="http://apache.org/cordova/ns/plugins/1.0" 
-xmlns:android="http://schemas.android.com/apk/res/android">
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+        id="com.example.plugin" 
+		version="0.0.1"  
+
+
 
 <name>Hello</name>
 
-<js-module name="Hello" src="www/Hello.js">
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
 
-<clobbers target="cordova.plugins.Hello" />
+  <asset src="www/hello.js" target="js/hello.js"/>
 
-</js-module><platform name="android">
+  <js-module src="www/hello.js" name="hello">
+    <clobbers target="hello" />
+  </js-module>
 
-<config-file parent="/*" target="res/xml/config.xml">
-<feature name="Hello">
-<param name="android-package" value="com.example.plugin.Hello" />
-</feature>
-</config-file>
+  <platform name="android">
 
-<config-file parent="/*" target="AndroidManifest.xml">
-</config-file>
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Hello">
+        <param name="android-package" value="com.example.plugin.Hello"/>
+      </feature>
+    </config-file>
 
-<source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/Hello" />
+    <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
+  </platform>
 
-</platform>
+
 </plugin>
