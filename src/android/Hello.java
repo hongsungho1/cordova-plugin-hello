@@ -14,8 +14,10 @@ public class Hello extends CordovaPlugin {
             String name = data.getString(0);
             String message = "Hello, " + name;
             
-           
+            CallbackContext(message);
+            /*
             callbackContext.success(message);
+            */
 
             return true;
 
